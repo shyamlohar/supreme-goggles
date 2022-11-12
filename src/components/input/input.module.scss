@@ -1,0 +1,23 @@
+.inputContainer {
+    margin-bottom: var(--size-4);
+
+    label {
+        display: block;
+        margin-bottom: var(--size-2);
+    }
+
+    input {
+        width: 100%;
+        max-width: 200px;
+        appearance: none;
+        border-radius: 0;
+        height: 42px;
+        border: 1px solid gainsboro;
+        padding-left: var(--size-3);
+        font-size: var(--size-4);
+        &:focus {
+            outline: none;
+            border: 2px solid gainsboro;
+        }
+    }
+}

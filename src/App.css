@@ -1,0 +1,91 @@
+.container {
+  padding: 40px 60px;
+}
+
+.table-actions-container {
+  margin-bottom: 10px;
+}
+
+.row-container {
+  position: relative;
+  min-height: 60px;
+  margin-left: var(--indent-size);
+}
+
+.row {
+  min-height: 60px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  border: 1px solid gainsboro;
+}
+
+.row .heading {
+  font-weight: 500;
+}
+
+.row .heading,
+.row .cell {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border-right: 1px solid gainsboro;
+  padding: 10px;
+  min-width: calc(100% / 7);
+  word-break: break-all;
+}
+
+.row > *:last-child {
+  border: none;
+}
+
+.heading.with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.expand-button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+}
+
+.delete-button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+}
+
+.delete-button svg {
+  height: 20px;
+  width: 20px;
+}
+
+.footerActionsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--size-5);
+}
+
+
+.loader {
+  min-height: 480px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}

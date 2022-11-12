@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    button {
+        appearance: none;
+        border: none;
+        height: var(--size-10);
+        padding: 0 var(--size-10);
+        background-color: gainsboro;
+        min-width: 200px;
+        font-weight: 500;
+        font-size: 16px;
+        &:disabled {
+            background-color: rgba(255, 255, 255, 0.262);
+            border: 1px solid gray;
+        }
+    }
+}
